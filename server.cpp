@@ -11,6 +11,7 @@ void call_plugin_function(const std::string& func_name, const std::string& arg) 
         std::cerr << "Cannot open library: " << dlerror() << std::endl;
         return;
     }
+    //
 
     // Look for the function symbol in the library
     typedef void (*plugin_func)(const char*);
